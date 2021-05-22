@@ -1,3 +1,5 @@
+#Link pro git https://github.com/PabloSSena/TrabalhoBD1
+
 CREATE TABLE NETOPREFERIDO(
 	nomeNeto VARCHAR(250),
     idade integer,
@@ -124,35 +126,95 @@ CREATE TABLE BINGO(
     FOREIGN KEY(idJogo) REFERENCES JOGOS(idJogo) ON DELETE CASCADE
 );
 
-INSERT INTO USUARIOS(ID,nomeCompleto,DATANASCIMENTO)
-VALUES('1', 'Alceu pereira','1995-02-21');
+INSERT INTO NETOPREFERIDO(nomeNeto,idade,sexo,CPF)
+VALUES('Felipe Augusto','13','M','142');
 
-INSERT INTO USUARIOS(ID,nomeCompleto,DATANASCIMENTO)
-VALUES('2', 'Claudia Moreira','1951-04-12');
+INSERT INTO NETOPREFERIDO(nomeNeto,idade,sexo,CPF)
+VALUES('André Savaro','14','M','111');
 
-INSERT INTO USUARIOS(ID,nomeCompleto,DATANASCIMENTO)
-VALUES('3', 'Pedro Andre','1952-05-09');
+INSERT INTO NETOPREFERIDO(nomeNeto,idade,sexo,CPF)
+VALUES('Camila Ballestrin','20','F','112');
 
-INSERT INTO USUARIOS(ID,nomeCompleto,DATANASCIMENTO)
-VALUES('4', 'Felipe Andre','1960-09-09');
+INSERT INTO NETOPREFERIDO(nomeNeto,idade,sexo,CPF)
+VALUES('Bella Portugal','11','F','114');
 
-INSERT INTO USUARIOS(ID,nomeCompleto,DATANASCIMENTO)
-VALUES('5', 'Andreia Moreira','1997-07-09');
+INSERT INTO NETOPREFERIDO(nomeNeto,idade,sexo,CPF)
+VALUES('Bianca Ferreira','16','F','115');
 
-INSERT INTO USUARIOS(ID,nomeCompleto,DATANASCIMENTO)
-VALUES('6', 'Adilson Santos','1997-01-10');
+INSERT INTO NETOPREFERIDO(nomeNeto,idade,sexo,CPF)
+VALUES('Pablo Sena','18','M','116');
 
-INSERT INTO USUARIOS(ID,nomeCompleto,DATANASCIMENTO)
-VALUES('7', 'Augusto Silva','1998-01-09');
+INSERT INTO NETOPREFERIDO(nomeNeto,idade,sexo,CPF)
+VALUES('Ana Silva','10','F','117');
 
-INSERT INTO USUARIOS(ID,nomeCompleto,DATANASCIMENTO)
-VALUES('8', 'Bruna Dos Anjos','1997-02-10');
+INSERT INTO NETOPREFERIDO(nomeNeto,idade,sexo,CPF)
+VALUES('Isabella Bello','12','F','118');
 
-INSERT INTO USUARIOS(ID,nomeCompleto,DATANASCIMENTO)
-VALUES('9', 'Lucia Fernanda','1954-12-11');
+INSERT INTO NETOPREFERIDO(nomeNeto,idade,sexo,CPF)
+VALUES('Gustavo Noguti','18','M','119');
 
-INSERT INTO USUARIOS(ID,nomeCompleto,DATANASCIMENTO)
-VALUES('10', 'Maria Dos Santos','1999-05-19');
+INSERT INTO NETOPREFERIDO(nomeNeto,idade,sexo,CPF)
+VALUES('Isabela de Lucena','15','F','120');
+
+INSERT INTO MISSAPREFERIDA(endereco,padre,hora,dia)
+VALUES('Rua Guarani n° 531','Marcelo Rossi','10:00','Segunda-feira');
+
+INSERT INTO MISSAPREFERIDA(endereco,padre,hora,dia)
+VALUES('Rua Guilherme de Paula n° 20','Pedro Augusto','11:00','Segunda-feira');
+
+INSERT INTO MISSAPREFERIDA(endereco,padre,hora,dia)
+VALUES('Rua Guilherme de Paula n° 300','Marcelo Rossi','10:00','Terça-feira');
+
+INSERT INTO MISSAPREFERIDA(endereco,padre,hora,dia)
+VALUES('Rua Augusta n° 10','Sergio Cailo','15:00','Quinta-feira');
+
+INSERT INTO MISSAPREFERIDA(endereco,padre,hora,dia)
+VALUES('Rua fevereiro n° 202','Amado Pereira','10:00','Quarta-feira');
+
+INSERT INTO MISSAPREFERIDA(endereco,padre,hora,dia)
+VALUES('Rua boa n° 2030','Marcelo Felié','10:00','Segunda-feira');
+
+INSERT INTO MISSAPREFERIDA(endereco,padre,hora,dia)
+VALUES('Rua Franciscana n° 200','Pedro André','16:00','Quinta-feira');
+
+INSERT INTO MISSAPREFERIDA(endereco,padre,hora,dia)
+VALUES('Rua Fernanda n° 50','Augusto Luis','10:00','Segunda-feira');
+
+INSERT INTO MISSAPREFERIDA(endereco,padre,hora,dia)
+VALUES('Rua Camila n° 500','Marcelo Rossi','08:00','Terça-feira');
+
+INSERT INTO MISSAPREFERIDA(endereco,padre,hora,dia)
+VALUES('Rua Americana n° 1120','Pedro Henrique','09:00','Segunda-feira');
+
+INSERT INTO USUARIOS(ID,nomeCompleto,DATANASCIMENTO,CPFNeto,enderecoMissa)
+VALUES('1', 'Alceu pereira','1995-02-21','112','Rua Guarani n° 531');
+
+INSERT INTO USUARIOS(ID,nomeCompleto,DATANASCIMENTO,enderecoMissa)
+VALUES('2', 'Claudia Moreira','1951-04-12','Rua Guilherme de Paula n° 20');
+
+INSERT INTO USUARIOS(ID,nomeCompleto,DATANASCIMENTO,enderecoMissa)
+VALUES('3', 'Pedro Andre','1952-05-09','Rua Guilherme de Paula n° 300');
+
+INSERT INTO USUARIOS(ID,nomeCompleto,DATANASCIMENTO,enderecoMissa)
+VALUES('4', 'Felipe Andre','1960-09-09','Rua Augusta n° 10');
+
+INSERT INTO USUARIOS(ID,nomeCompleto,DATANASCIMENTO,enderecoMissa)
+VALUES('5', 'Andreia Moreira','1997-07-09','Rua fevereiro n° 202');
+
+INSERT INTO USUARIOS(ID,nomeCompleto,DATANASCIMENTO,enderecoMissa)
+VALUES('6', 'Adilson Santos','1997-01-10','Rua boa n° 2030');
+
+INSERT INTO USUARIOS(ID,nomeCompleto,DATANASCIMENTO,enderecoMissa)
+VALUES('7', 'Augusto Silva','1998-01-09','Rua Franciscana n° 200');
+
+INSERT INTO USUARIOS(ID,nomeCompleto,DATANASCIMENTO,enderecoMissa)
+VALUES('8', 'Bruna Dos Anjos','1997-02-10','Rua Fernanda n° 50');
+
+INSERT INTO USUARIOS(ID,nomeCompleto,DATANASCIMENTO,enderecoMissa)
+VALUES('9', 'Lucia Fernanda','1954-12-11','Rua Camila n° 500');
+
+INSERT INTO USUARIOS(ID,nomeCompleto,DATANASCIMENTO,enderecoMissa)
+VALUES('10', 'Maria Dos Santos','1999-05-19','Rua Americana n° 1120');
 
 INSERT INTO PAGINAS(quantCurtias,nomePagina,dataCriada)
 VALUES('1', 'Eu amo gatos','1998-06-21');
@@ -373,66 +435,6 @@ VALUES('https://www.IdososAqui.com/406399&set=a.2839766697','2021-04-21','Numero
 INSERT INTO PUBLICACAO(linkPublicacao,dataPubli,conteudo,ID)
 VALUES('https://www.IdososAqui.com/fbid=32750991540','2021-02-23','Ai que sol horrivel','10');
 
-INSERT INTO NETOPREFERIDO(nomeNeto,idade,sexo,CPF)
-VALUES('Felipe Augusto','13','M','142');
-
-INSERT INTO NETOPREFERIDO(nomeNeto,idade,sexo,CPF)
-VALUES('André Savaro','14','M','111');
-
-INSERT INTO NETOPREFERIDO(nomeNeto,idade,sexo,CPF)
-VALUES('Camila Ballestrin','20','F','112');
-
-INSERT INTO NETOPREFERIDO(nomeNeto,idade,sexo,CPF)
-VALUES('Bella Portugal','11','F','114');
-
-INSERT INTO NETOPREFERIDO(nomeNeto,idade,sexo,CPF)
-VALUES('Bianca Ferreira','16','F','115');
-
-INSERT INTO NETOPREFERIDO(nomeNeto,idade,sexo,CPF)
-VALUES('Pablo Sena','18','M','116');
-
-INSERT INTO NETOPREFERIDO(nomeNeto,idade,sexo,CPF)
-VALUES('Ana Silva','10','F','117');
-
-INSERT INTO NETOPREFERIDO(nomeNeto,idade,sexo,CPF)
-VALUES('Isabella Bello','12','F','118');
-
-INSERT INTO NETOPREFERIDO(nomeNeto,idade,sexo,CPF)
-VALUES('Gustavo Noguti','18','M','119');
-
-INSERT INTO NETOPREFERIDO(nomeNeto,idade,sexo,CPF)
-VALUES('Isabela de Lucena','15','F','120');
-
-INSERT INTO MISSAPREFERIDA(endereco,padre,hora,dia)
-VALUES('Rua Guarani n° 531','Marcelo Rossi','10:00','Segunda-feira');
-
-INSERT INTO MISSAPREFERIDA(endereco,padre,hora,dia)
-VALUES('Rua Guilherme de Paula n° 20','Pedro Augusto','11:00','Segunda-feira');
-
-INSERT INTO MISSAPREFERIDA(endereco,padre,hora,dia)
-VALUES('Rua Guilherme de Paula n° 300','Marcelo Rossi','10:00','Terça-feira');
-
-INSERT INTO MISSAPREFERIDA(endereco,padre,hora,dia)
-VALUES('Rua Augusta n° 10','Sergio Cailo','15:00','Quinta-feira');
-
-INSERT INTO MISSAPREFERIDA(endereco,padre,hora,dia)
-VALUES('Rua fevereiro n° 202','Amado Pereira','10:00','Quarta-feira');
-
-INSERT INTO MISSAPREFERIDA(endereco,padre,hora,dia)
-VALUES('Rua boa n° 2030','Marcelo Felié','10:00','Segunda-feira');
-
-INSERT INTO MISSAPREFERIDA(endereco,padre,hora,dia)
-VALUES('Rua Franciscana n° 200','Pedro André','16:00','Quinta-feira');
-
-INSERT INTO MISSAPREFERIDA(endereco,padre,hora,dia)
-VALUES('Rua Fernanda n° 50','Augusto Luis','10:00','Segunda-feira');
-
-INSERT INTO MISSAPREFERIDA(endereco,padre,hora,dia)
-VALUES('Rua Camila n° 500','Marcelo Rossi','08:00','Terça-feira');
-
-INSERT INTO MISSAPREFERIDA(endereco,padre,hora,dia)
-VALUES('Rua Americana n° 1120','Pedro Henrique','09:00','Segunda-feira');
-
 INSERT INTO INFORMACOESMEDICAS(cartaoSus,tipoSanguineo,remediosQueToma,doencas,ID)
 VALUES('12232','O-','Nenhum','Nenhuma','1');
 
@@ -589,9 +591,103 @@ VALUES('18,12,51','17','9');
 INSERT INTO BINGO(cartela,numeroSorteado,idJogo)
 VALUES('11,05,52','11','10');
 
+#Encontre o nome do usuario que curte a pagina eu amo gatos
+SELECT U.nomeCompleto
+FROM USUARIOS U
+WHERE U.ID IN (SELECT C.ID
+				FROM CURTE C
+                WHERE C.nomePagina = 'Eu amo gatos');
+
+#Encontre o numero de usuários que não possuem doença
+SELECT COUNT(U.nomeCompleto)
+FROM USUARIOS U
+WHERE U.ID IN (SELECT IM.ID
+				FROM INFORMACOESMEDICAS IM
+                WHERE IM.doencas = 'Nenhuma');
+                
+#Selecione todos os usuarios que ja foram no bosque ou no yazigi
+SELECT U.nomeCompleto, E.localizacao
+FROM USUARIOS U, EFETUA E
+WHERE E.localizacao = 'yazigi'
+AND U.ID = E.ID
+UNION
+SELECT U.nomeCompleto, E.localizacao
+FROM USUARIOS U, EFETUA E
+WHERE E.localizacao = 'bosque'
+AND U.ID = E.ID;
+
+#Encontre o nome dos usuarios que possuam gripe ou rinite
+SELECT  U.nomeCompleto,IM.doencas
+FROM USUARIOS U,INFORMACOESMEDICAS IM
+WHERE U.ID = IM.ID
+AND IM.doencas = 'Gripe'
+UNION
+SELECT DISTINCT U.nomeCompleto,IM.doencas
+FROM USUARIOS U,INFORMACOESMEDICAS IM
+WHERE U.ID = IM.ID
+AND IM.doencas = 'Rinite';
+
+#Encontre o nome e lugar que todos os usuário com ID maior que 5 realizaram CheckIn
+SELECT DISTINCT U.nomeCompleto, E.localizacao
+FROM USUARIOS U, EFETUA E
+WHERE U.ID NOT IN (SELECT U.ID
+				   FROM USUARIOS U
+				   WHERE U.ID < 6)
+AND U.ID = E.ID;
+
+#Encontre todos os usuário com o tipo de sangue B-,B+ e seu cartão do sus
+SELECT DISTINCT U.nomeCompleto,IM.tipoSanguineo,IM.cartaoSus
+FROM USUARIOS U,INFORMACOESMEDICAS IM
+WHERE U.ID = IM.ID
+AND IM.tipoSanguineo = 'B-'
+UNION
+SELECT DISTINCT U.nomeCompleto,IM.tipoSanguineo,IM.cartaoSus
+FROM USUARIOS U,INFORMACOESMEDICAS IM
+WHERE U.ID = IM.ID
+AND IM.tipoSanguineo = 'B+';
+
+#Encontre o Grupo com a maior quantidade de membros, o nome dele e o IP do usuario que participa
+SELECT P.ID,G.nome, G.quantMembros
+FROM GRUPOS G,PARTICIPA P 
+WHERE G.nome = P.nome
+AND G.quantMembros =  (SELECT MAX(G.quantMembros)
+						 FROM GRUPOS G);
+
+#Encontre os usuário que faze parte do grupo idosas artistas ou curte a pagina memes
+SELECT U.nomeCompleto
+FROM USUARIOS U, PARTICIPA P
+WHERE P.nome = 'Idosas artistas'
+AND U.ID = P.ID
+UNION
+SELECT U.nomeCompleto
+FROM USUARIOS U, CURTE C
+WHERE C.nomePagina = 'Memes'
+AND U.ID = C.ID;
+
+#Encontre o nome dos usuário que possuem neta preferida(MEMBRO DA TABELA NETOPREFERIDO COM SEXO=F)
+SELECT U.nomeCompleto
+FROM USUARIOS U
+WHERE EXISTS(SELECT NP.nomeNeto
+			 FROM NETOPREFERIDO NP
+			 WHERE NP.sexo = 'F' AND NP.CPF = U.CPFNeto);
+
+#Selecione usuários que suas missas preferidas não são na quinta feira
+SELECT U.nomeCompleto
+FROM USUARIOS U
+WHERE U.enderecoMissa NOT IN (SELECT MS.endereco
+							  FROM MISSAPREFERIDA MS
+                              WHERE MS.dia = 'Quinta-feira');
 
 
 
+
+
+
+						
+
+
+
+                
 
 
 
